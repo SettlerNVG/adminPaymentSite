@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Выбор банка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="bank-list.html" class="link-comeback">
+                <img class="icons-comeback" src="assets/icons/arrow-back.svg">
+                Перейти назад к реквизитам
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="section section-droppers-list">
+            <div class="container">
+                <div class="droppers-addbar">
+                    <div class="name-bank-and-comeback">
+                        <h2>Обновление реквизита</h2>
+                    </div>
+               </div>
+               <div class="new-requisite-form-area">
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="surname" class="t3 hl-gray">Фамилия</label>
+                            <input id="surname" type="text" name="surname" placeholder="Иванов" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="name" class="t3 hl-gray">Имя</label>
+                            <input id="name" type="text" name="name" placeholder="Иван" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="middlename" class="t3 hl-gray">Отчество</label>
+                            <input id="middlename" type="text" name="middlename" placeholder="Иванович" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="biknumber" class="t3 hl-gray">БИК</label>
+                            <input class="biknumber" id="biknumber" type="text" name="biknumber" placeholder="00 00 00 000" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="cardnumber" class="t3 hl-gray">Номер карты</label>
+                            <input class="cardnumber" id="cardnumber" type="text" name="cardnumber" placeholder="0000 0000 0000 0000" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="walletnumber" class="t3 hl-gray">Номер счёта (текущий счёт)</label>
+                            <input id="walletnumber" type="text" name="walletnumber" placeholder="40702 810 6 8006 0657001" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="walletnumber" class="t3 hl-gray">Номер счёта (текущий счёт)</label>
+                            <select class="form-select" name="bankselector">
+                                <option value="" select>Выберите банк (БУДЬТЕ ВНИМАТЕЛЬНЫ)</option>
+                                <hr>
+                                <option value="sberbank">🟢 СберБанк</option>
+                                <option value="tinkoff">🟡 Тинькофф (Т-Банк)</option>
+                                <option value="raiffaisen">🟠 РайффайзенБанк</option>
+                                <option value="zenit">🔵 ЗенитБанк</option>
+                                <option value="rencredit">🟣 РенессансБанк</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="proxyip" class="t3 hl-gray">IP Proxy</label>
+                            <input id="proxyip" type="text" name="proxyip" placeholder="65.31.64.77:0000" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="proxylogin" class="t3 hl-gray">Прокси логин</label>
+                            <input id="proxylogin" type="text" name="proxylogin" placeholder="loginMyProxy" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <div class="inner">
+                            <label for="proxypass" class="t3 hl-gray">Прокси пароль</label>
+                            <input id="proxypass" type="text" name="proxypass" placeholder="passMyProxy" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-input full-input">
+                        <div class="inner">
+                            <label for="cookie" class="t3 hl-gray">Куки</label>
+                            <input id="cookie" type="text" name="cookie" placeholder="Куки сюда" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="notify-alert">
+                        Имя, фамилия и отчество вводятся без сокращений, с заглавной буквы, никак иначе!<br><br>
+                        Обновляя реквизит подтверждаю, что все данные актуальны и корректно мною введены
+                    </div>
+                    <a href="" class="btn add-btn fill-btn">
+                        <img class="icons-comeback" src="assets/icons/arrow-sync.svg">
+                        Обновить реквизит
+                    </a>
+               </div>
+               <!--Добавьте класс active к error-notify и он отобразится-->
+               <div class="error-notify">
+                    Такой реквизит уже есть
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+<script src="https://unpkg.com/imask"></script>
+<script src="assets/main.js"></script>
+</html>

@@ -1,0 +1,440 @@
+body {
+    background: #E4E7EB;
+    color: #131313;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    padding: 24px 0;
+}
+
+.name-bank-and-comeback {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section {
+    
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-bank-selector {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.section-bank-selector .container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.banks-selector {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banks-selector .selector-bank-card {
+    border-radius: 28px;
+    background: #fff;
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s ease-in;
+    user-select: none;
+    outline: 2px solid #fff;
+    cursor: pointer;
+}
+
+.banks-selector .selector-bank-card:hover {
+    transform: scale(1.05);
+    outline: 2px solid #289CFF;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.t2 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.link-comeback {
+    background: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 99px;
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    text-decoration: unset;
+    color: #131313;
+    transition: 0.2s ease-in;
+    outline: 2px solid #fff;
+    font-weight: 600;
+}
+
+.link-comeback:hover {
+    outline: 2px solid #289CFF;
+}
+
+.icons-comeback {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    position: relative;
+    color: #131313;
+}
+
+.droppers-addbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 24px 24px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    white-space: nowrap;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: bottom;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    text-decoration: none;
+    line-height: 1;
+    padding: 12px 20px;
+    border-radius: 16px;
+    transition: 0.2s ease-in;
+    height: 56px;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.size-s {
+    padding: 8px 16px;
+    height: 36px;
+    font-weight: 700;
+}
+
+.size-m {
+    padding: 8px 16px;
+    height: 48px;
+    font-weight: 700;
+}
+
+.btn.secondary {
+    background: #e8eaec;
+    color: #131313;
+}
+
+.btn.secondary:hover {
+    background: #ccced1;
+    color: #131313;
+}
+
+.btn.danger {
+    background: #A8200D;
+    color: #fff;
+}
+
+.btn.danger:hover {
+    background: #c52813;
+    color: #fff;
+}
+
+.button-swither-on-off {
+    background: #9FE870;
+    color: #163300;
+}
+
+.button-swither-on-off:hover {
+    background-color: #65CF21;
+}
+
+.button-swither-on-off.inactive {
+    background: #A8200D;
+    color: #fff;
+}
+
+.button-swither-on-off.inactive:hover {
+    background: #c52813;
+    color: #fff;
+}
+
+.add-btn {
+    background: #289CFF;
+    color: #fff;
+    gap: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .add-btn {
+        width: 100%;
+    }
+}
+
+.add-btn:hover {
+    background: #1487eb;
+}
+
+.droppers-card-requisite {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.drop-card {
+    background: #fff;
+    border-radius: 20px;
+    transition: 0.2s ease-in;
+    padding: 24px;
+    width: calc(33.33% - 12px);
+}
+
+@media screen and (max-width: 1024px) {
+    .drop-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .drop-card {
+        width: 100%;
+    }
+}
+
+.drop-card:hover {
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.16);
+}
+
+.drop-card .fio {
+    margin-bottom: 8px;
+}
+
+.bank-name-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 4px 12px 4px 4px;
+    border-radius: 999px;
+    background: #e8eaec;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.bank-status-badge {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 999px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.bank-status-badge.active {
+    background: #9FE870;
+    color: #163300;
+}
+
+.bank-status-badge.inactive {
+    background: #ffdfdb;
+    color: #A8200D;
+}
+
+.badges {
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.bank-name-logo img {
+    width: 24px;
+    height: 24px;
+}
+
+.group-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+.group-buttons .btn:nth-child(1) {
+    width: calc(50% - 4px);
+}
+
+.group-buttons .btn:nth-child(2) {
+    width: calc(50% - 4px);
+}
+
+.group-buttons .btn:nth-child(3) {
+    width: 100%;
+}
+
+.new-requisite-form-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.new-requisite-form-area > .form-input {
+    width: calc(50% - 6px);
+}
+
+@media screen and (max-width: 1024px) {
+    .new-requisite-form-area > .form-input {
+        width: 100%;
+    }
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-select {
+    z-index: 10;
+    width: 100%;
+    min-height: 3.2rem;
+    padding: 32px 24px 16px;
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #131313;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.form-input {
+    border-radius: 20px;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.form-input .inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.form-input .inner input {
+    z-index: 10;
+    width: 100%;
+    min-height: 3.2rem;
+    padding: 32px 24px 16px;
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #131313;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.form-input .inner label {
+    padding: 8px 24px 0;
+    position: absolute;
+    z-index: 15;
+}
+
+.fill-btn {
+    width: 100%;
+}
+
+.notify-alert {
+    background-color: #d0323821;
+    color: #D03238;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 20px;
+}
+
+.error-notify {
+    margin-top: 24px;
+    background: #D03238;
+    box-shadow: 0 2px 16px #D03238;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 16px 24px;
+    text-align: center;
+
+    display: none;
+}
+
+.error-notify.active {
+    display: block;
+}
+
+.full-input {
+    width: 100% !important;
+}
